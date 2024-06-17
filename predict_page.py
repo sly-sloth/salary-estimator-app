@@ -3,6 +3,7 @@ import pickle
 import numpy as np
 import requests
 import sklearn
+import random
 
 
 
@@ -69,8 +70,21 @@ conversion_data = conversion_data["data"]
 
 def show_predict_page():
     st.title("Software Dev Salary Predictor")
-
-    st.write("""### We need some info to predict the salary""")
+    subheadings = [
+        "We need some info to predict the salary",
+        "Provide Necessary Details to Estimate Your Salary",
+        "Input Required Information for Salary Prediction",
+        "Enter Your Details for Accurate Salary Estimation",
+        "Help Us Calculate Your Estimated Salary",
+        "Supply the Information Needed for Salary Prediction",
+        "Share Your Details for a Precise Salary Estimate",
+        "Fill in the Information for Salary Forecasting",
+        "Complete the Form for Your Salary Prediction",
+        "Provide Your Information to Predict Your Earnings",
+        "Submit Your Details for an Accurate Salary Calculation"
+    ]
+    subhead = random.choice(subheadings)
+    st.write(f"""### {subhead}""")
 
 
     countries = (
