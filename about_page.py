@@ -16,7 +16,7 @@ def show_about_page():
     st.markdown('''
                 <style>
                     .big-font {
-                        font-size:21px !important;
+                        font-size:19px !important;
                         font-style:italic;
                     }
                 </style>
